@@ -1,0 +1,252 @@
+/*VAR*/
+:root {
+	--azul: #6186bb;
+	--laranja: #ffa234; 
+	--cinza: #535051;
+	--cinzaClaro: #bfbfbf;
+}
+
+html {overflow-: hidden;}
+
+.parallax { 
+    background-image: url("../img/background_topo.png");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*NAVBAR*/
+.navbar-light {
+	background-color: rgba(255, 255, 255, 0.9) !important;
+	font-family: font-family: 'Open Sans', sans-serif !important;
+} 
+.nav-link {
+	color: var(--azul) !important;
+	} .nav-link:hover {
+		color: var(--laranja) !important;
+	}
+/*fim NAVBAR*/
+
+/*HOME*/
+.homeSection {
+		background-image: url("../img/background_topo.png");
+		background-color: var(--azul);
+		background-size: cover;
+		height: 50em;
+} .homeSection button {
+	border-radius: 15em;
+	font-size: 1.1em;
+	padding: 0.8em;
+	background-color: var(--azul);
+	border-color: var(--azul);
+} .homeSection button:hover {
+	background-color: var(--laranja);
+	border-color: var(--laranja);
+	color: var(--azul);
+	font-weight: bold;
+}
+
+#textos {
+	margin-top: 15em;
+} #textos h2 {
+	font-size: 2.6em;
+	font-weight: bold;
+	color: var(--azul);
+	font-family: font-family: 'Open Sans', sans-serif;
+} #textos p {
+	font-size: 1.8em;
+	font-family: font-family: 'Open Sans', sans-serif;
+}
+/*fim HOME*/
+
+/*SOBRE*/
+#sobre {
+	background-image: url("../img/fundo_sobre.png");
+	background-color: var(--laranja);
+	background-size: cover;
+	height: 36em;
+} #sobre h1 {
+	color: #FFF;
+} #sobre p{
+	color: #FFF;
+	padding: 3em;
+	font-size: 0.9em;
+}
+/*fim SOBRE*/
+
+/*POSTAGENS*/
+#postagens {
+	text-align: center;
+}#postagens h2 {
+	color: var(--cinzaClaro);
+}#postagens h3 {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+#hrPostagens {
+	background-color: var(--azul);
+	height: 0.4em;
+}
+
+.card {
+	border-color: var(--cinza);
+	padding: 0;
+	margin: 3.2em;
+	-webkit-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.75);
+} .hrCard {
+	color: var(--cinza);
+	background-color: var(--cinza);
+} .card-text {
+	color: var(--cinza);
+	text-align: justify;
+} .card-title {
+	text-align: justify;
+}
+
+.botaoVerMais {
+	color: var(--cinza);
+	border-color: var(--cinza);
+}.botaoVerMais:hover {
+	background-color: var(--cinza);
+	border-color: var(--cinza);
+}
+/*fim POSTAGENS*/
+
+/*FEED SOCIAL*/
+#feedSocial {
+	text-align: center;
+	background-image: url("../img/fundo_azul.png");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} #feedSocial h2 {
+	color: #FFF;
+} #feedSocial h3 {
+	color: #FFF;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+#hrFeedSocial {
+	background-color: #05323c;
+	height: 0.4em;
+}
+/*fim POSTAGENS*/
+
+/*FORMULÁRIO*/
+
+#formularioForm {
+	padding: 2em;
+	background-color: #E8E8E8;
+} #formularioForm h2 {
+	font-weight: bold;
+} 
+
+#formularioForm button {
+	border-radius: 15em;
+} 
+#formularioContato {
+	background-color: #3c3c3c;
+}
+
+#formularioContato {
+	padding: 2em;
+}#formularioContato p {
+	font-size: 1.1em;
+	color: #FFF;
+}#formularioContato h2 {
+	color: #FFF;
+	font-weight: bold;
+}
+/*fim do FORMULARIO*/
+
+iframe {
+	background-color: #F2F2F2;
+}
+
+footer a {
+	color: #fff;
+} footer a:hover {
+	color: #FFC107;	
+	 text-decoration: none;
+	font-weight: bold;;
+}
+
+#hrefForm {
+	font-size: 1.2em;
+	cursor: pointer;
+} 
+
+#navbarSupportedContent {
+	cursor: pointer;
+}
+
+
+/*MEDIA QUERY PARA SMARTH*/
+@media(min-width: 320px) and (max-width:959px) {
+	.homeSection {
+		height: 40em;
+	}
+
+	#textos h2 {
+		font-size: 1.5em;
+		text-align: center;
+	} #textos p {
+		font-size: 1em;
+		text-align: center;
+	}
+
+	#sobre {
+		height: 55em;
+	}
+	#sobre h1 {
+		font-size: 1.5em;
+		color: #000;
+		text-align: center;
+	} #sobre p {
+		padding: 1em;
+		font-size: 1em;
+		color: #000;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 2em;
+	}
+
+	#postagensPadding {
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+
+	.card {
+		margin: 0.1em !important;
+	}
+
+	#postagens h3 {
+		font-size:1.5em;
+	} #postagens h3 {
+		font-size: 1.5em;
+	}
+
+	#feedSocial h3 {
+		font-size:1.5em;
+	} #feedSocial h3 {
+		font-size: 1.5em;
+	}
+
+	#formularioContato p {
+		font-size: 1.1em;
+		color: #FFF;
+	}
+
+	#formularioForm {
+		margin-left: 2em;
+	}
+	#formularioContato {
+		margin-left: 2em;
+	}
+}

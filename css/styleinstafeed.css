@@ -1,0 +1,21 @@
+body {
+	padding-top:5vh;
+}
+
+.instaimg img {margin-bottom:30px;}
+.instaimg img:hover {
+	opacity:0.8;
+	-moz-opacity:0.8;
+	-webkit-opacity:0.8;
+}
+
+.mfp-title {
+	background-color: #ffa234;
+	text-align: justify;
+	color: #000;
+	padding: 1em;
+}
+
+.mfp-counter {
+	color: #000;
+}
